@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.8.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+
+  &lt;title&gt;Ali &amp; Mai · Wedding Invitation&lt;/title&gt;
+
+  &lt;meta
+    name=&quot;description&quot;
+    content=&quot;Ali Mohamed &amp; Mai Marwan Wedding Invitation&quot;
+  /&gt;
+
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+
+  &lt;link
+    href=&quot;https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap&quot;
+    rel=&quot;stylesheet&quot;
+  &gt;
+
+  &lt;style&gt;
+    :root {
+      --bg: #f5f1eb;
+      --paper: #faf8f4;
+      --text: #26231f;
+      --muted: #817a70;
+      --line: #ddd6cc;
+      --accent: #7d6c5b;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: &quot;Cairo&quot;, sans-serif;
+      font-weight: 400;
+      overflow-x: hidden;
+    }
+
+    button,
+    input,
+    textarea {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* =========================
+       LANGUAGE
+    ========================= */
+
+    .language {
+      position: fixed;
+      top: 22px;
+      right: 22px;
+      z-index: 100;
+      background: rgba(250,248,244,.92);
+      border: 1px solid var(--line);
+      padding: 7px 13px;
+      font-size: 12px;
+      letter-spacing: .05em;
+    }
+
+    /* =========================
+       OPENING SCREEN
+    ========================= */
+
+    #opening {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: var(--paper);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: opacity .8s ease, visibility .8s ease;
+    }
+
+    #opening.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .opening-inner {
+      width: min(90%, 520px);
+      padding: 30px;
+    }
+
+    .opening-date {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 55px;
+      letter-spacing: .08em;
+    }
+
+    .opening-small {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: 4px;
+    }
+
+    .opening-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(42px, 12vw, 78px);
+      font-weight: 400;
+      line-height: 1;
+      margin: 8px 0 32px;
+    }
+
+    .open-btn {
+      border: 1px solid var(--text);
+      background: transparent;
+      padding: 13px 30px;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .open-btn:hover {
+      background: var(--text);
+      color: white;
+    }
+
+    .skip {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    main {
+      width: 100%;
+    }
+
+    section {
+      width: min(100%, 900px);
+      margin: auto;
+      padding: 90px 25px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: .2em;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .serif {
+      font-family: &quot;Playfair Display&quot;, serif;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 90px;
+    }
+
+    .hero-content {
+      width: min(100%, 760px);
+    }
+
+    .hero-invite {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(50px, 11vw, 100px);
+      font-weight: 400;
+      line-height: .95;
+      letter-spacing: -.04em;
+    }
+
+    .hero-date {
+      margin-top: 30px;
+      font-size: 14px;
+      letter-spacing: .08em;
+    }
+
+    .initials {
+      margin-top: 70px;
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: 20px;
+      letter-spacing: .2em;
+    }
+
+    .guest {
+      margin-top: 35px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       COUPLE / PHOTO
+    ========================= */
+
+    .couple {
+      padding-top: 20px;
+    }
+
+    .couple-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(42px, 8vw, 72px);
+      font-weight: 400;
+      margin-bottom: 35px;
+    }
+
+    .main-photo {
+      width: 100%;
+      max-width: 650px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 45px;
+      background: #e7e1d8;
+    }
+
+    .date-under-photo {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: 20px;
+    }
+
+    /* =========================
+       VERSE
+    ========================= */
+
+    .verse {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .arabic {
+      direction: rtl;
+      font-size: clamp(20px, 4vw, 28px);
+      line-height: 2;
+      margin-bottom: 25px;
+    }
+
+    .english {
+      max-width: 650px;
+      margin: auto;
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 14px;
+    }
+
+    /* =========================
+       DETAILS
+    ========================= */
+
+    .details {
+      text-align: center;
+    }
+
+    .details-intro {
+      color: var(--muted);
+      line-height: 2;
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+
+    .names {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(38px, 7vw, 65px);
+      font-weight: 400;
+      margin-bottom: 45px;
+    }
+
+    .parents {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      max-width: 550px;
+      margin: auto;
+    }
+
+    .parent-label {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .parent-name {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: 20px;
+    }
+
+    .event-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 65px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .event-item {
+      padding: 28px 10px;
+      border-right: 1px solid var(--line);
+    }
+
+    .event-item:last-child {
+      border-right: none;
+    }
+
+    .event-label {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      margin-bottom: 8px;
+    }
+
+    .event-value {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: 18px;
+    }
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .story {
+      padding-bottom: 50px;
+    }
+
+    .story-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(45px, 9vw, 75px);
+      font-weight: 400;
+    }
+
+    .story-description {
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .story-slider {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      margin-top: 45px;
+      padding-bottom: 15px;
+      scrollbar-width: none;
+    }
+
+    .story-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .story-card {
+      flex: 0 0 78%;
+      max-width: 560px;
+      scroll-snap-align: center;
+    }
+
+    .story-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #e7e1d8;
+    }
+
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .slider-btn {
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 1px solid var(--line);
+      font-size: 18px;
+    }
+
+    .slider-hint {
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 13px;
+    }
+
+    /* =========================
+       COUNTDOWN
+    ========================= */
+
+    .countdown {
+      text-align: center;
+      border-top: 1px solid var(--line);
+    }
+
+    .count-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(45px, 9vw, 75px);
+      font-weight: 400;
+    }
+
+    .timer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 50px auto;
+      max-width: 650px;
+    }
+
+    .time-number {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(30px, 6vw, 55px);
+    }
+
+    .time-label {
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .calendar-btn,
+    .direction-btn {
+      display: inline-block;
+      border: 1px solid var(--text);
+      background: transparent;
+      padding: 13px 28px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 12px;
+      transition: .3s;
+    }
+
+    .calendar-btn:hover,
+    .direction-btn:hover {
+      background: var(--text);
+      color: white;
+    }
+
+    /* =========================
+       VENUE
+    ========================= */
+
+    .venue {
+      text-align: center;
+    }
+
+    .venue-image {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #e7e1d8;
+      margin: 35px auto;
+      display: block;
+    }
+
+    .venue-name {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(32px, 6vw, 50px);
+    }
+
+    .venue-address {
+      color: var(--muted);
+      margin: 8px 0 25px;
+      font-size: 14px;
+    }
+
+    /* =========================
+       WISHES
+    ========================= */
+
+    .wishes {
+      border-top: 1px solid var(--line);
+    }
+
+    .wishes-title {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: clamp(45px, 9vw, 75px);
+      font-weight: 400;
+      margin-bottom: 35px;
+    }
+
+    .wish-form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .field {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+      padding: 15px 5px;
+      outline: none;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    textarea.field {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .send-btn {
+      border: 1px solid var(--text);
+      background: transparent;
+      padding: 12px 30px;
+      font-size: 12px;
+    }
+
+    .send-btn:hover {
+      background: var(--text);
+      color: white;
+    }
+
+    .wish-list {
+      max-width: 600px;
+      margin: 45px auto 0;
+      text-align: left;
+    }
+
+    .wish {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wish-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .wish-text {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .no-wishes {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+      padding: 80px 20px 100px;
+    }
+
+    .footer-message {
+      font-family: &quot;Playfair Display&quot;, serif;
+      font-size: 25px;
+    }
+
+    .footer-date {
+      margin-top: 30px;
+      color: var(--muted);
+      letter-spacing: .12em;
+      font-size: 13px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 75px 20px;
+      }
+
+      .parents {
+        gap: 20px;
+      }
+
+      .event-info {
+        grid-template-columns: 1fr;
+      }
+
+      .event-item {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .event-item:last-child {
+        border-bottom: none;
+      }
+
+      .timer {
+        gap: 5px;
+      }
+
+      .time-number {
+        font-size: 30px;
+      }
+
+      .story-card {
+        flex-basis: 86%;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;!-- =========================
+       LANGUAGE BUTTON
+  ========================= --&gt;
+
+  &lt;button class=&quot;language&quot; onclick=&quot;toggleLanguage()&quot;&gt;
+<span lang="hi-IN">    العربية</span>
+  &lt;/button&gt;
+
+
+  &lt;!-- =========================
+       OPENING
+  ========================= --&gt;
+
+  &lt;div id=&quot;opening&quot;&gt;
+
+    &lt;div class=&quot;opening-inner&quot;&gt;
+
+      &lt;div class=&quot;opening-date&quot;&gt;
+        Friday, 16 October 2026
+      &lt;/div&gt;
+
+      &lt;div class=&quot;opening-small&quot;&gt;
+        Dear family &amp; friends,
+      &lt;/div&gt;
+
+      &lt;div class=&quot;opening-small&quot;&gt;
+        we have something lovely to share with you
+      &lt;/div&gt;
+
+      &lt;div class=&quot;opening-title&quot;&gt;
+        Ali &amp; Mai
+      &lt;/div&gt;
+
+      &lt;button class=&quot;open-btn&quot; onclick=&quot;openInvitation()&quot;&gt;
+        Open Invitation
+      &lt;/button&gt;
+
+      &lt;div class=&quot;skip&quot;&gt;
+        Tap anywhere to skip
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+
+  &lt;main&gt;
+
+    &lt;!-- =========================
+         HERO
+    ========================= --&gt;
+
+    &lt;section class=&quot;hero&quot;&gt;
+
+      &lt;div class=&quot;hero-content&quot;&gt;
+
+        &lt;div class=&quot;hero-invite&quot;&gt;
+          You are invited
+        &lt;/div&gt;
+
+        &lt;div class=&quot;hero-invite&quot;&gt;
+          to celebrate the wedding of
+        &lt;/div&gt;
+
+        &lt;h1 class=&quot;hero-title&quot;&gt;
+          Ali Mohamed&lt;br&gt;
+          &lt;span style=&quot;font-size:.55em;&quot;&gt;&amp;&lt;/span&gt;&lt;br&gt;
+          Mai Marwan
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;hero-date&quot;&gt;
+          Friday, 16 October 2026
+        &lt;/div&gt;
+
+        &lt;div class=&quot;initials&quot;&gt;
+          A &amp; M
+        &lt;/div&gt;
+
+        &lt;div class=&quot;guest&quot; id=&quot;guestMessage&quot;&gt;&lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         COUPLE
+    ========================= --&gt;
+
+    &lt;section class=&quot;couple center&quot;&gt;
+
+      &lt;div class=&quot;eyebrow&quot;&gt;
+        The wedding of
+      &lt;/div&gt;
+
+      &lt;h2 class=&quot;couple-title&quot;&gt;
+        Ali Mohamed &amp; Mai Marwan
+      &lt;/h2&gt;
+
+      &lt;!--
+<span lang="hi-IN">        ضع صورة إيدكم هنا باسم</span>:
+        wedding-photo.jpeg
+      --&gt;
+
+      &lt;img
+        src=&quot;wedding-photo.jpeg&quot;
+        class=&quot;main-photo&quot;
+        alt=&quot;Ali Mohamed &amp; Mai Marwan&quot;
+        onerror=&quot;this.style.background='#e7e1d8';&quot;
+      &gt;
+
+      &lt;div class=&quot;date-under-photo&quot;&gt;
+        Friday, 16 October 2026
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         QURAN VERSE
+    ========================= --&gt;
+
+    &lt;section class=&quot;verse&quot;&gt;
+
+      &lt;div class=&quot;arabic&quot;&gt;
+<span lang="hi-IN">        ﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ</span>
+<span lang="hi-IN">        أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</span>
+<span lang="hi-IN">        وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾</span>
+      &lt;/div&gt;
+
+      &lt;div class=&quot;english&quot;&gt;
+        Among His signs: He created for you partners
+        from among yourselves, that you may find peace
+        in one another, and He placed between you love
+        and mercy.
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         DETAILS
+    ========================= --&gt;
+
+    &lt;section class=&quot;details&quot;&gt;
+
+      &lt;div class=&quot;details-intro&quot;&gt;
+        With joy and gratitude, we announce the marriage of
+      &lt;/div&gt;
+
+      &lt;div class=&quot;names&quot;&gt;
+        Ali Mohamed &amp; Mai Marwan
+      &lt;/div&gt;
+
+      &lt;div class=&quot;parents&quot;&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;parent-label&quot;&gt;
+            Son of
+          &lt;/div&gt;
+
+          &lt;div class=&quot;parent-name&quot;&gt;
+            Mohamed
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;parent-label&quot;&gt;
+            Daughter of
+          &lt;/div&gt;
+
+          &lt;div class=&quot;parent-name&quot;&gt;
+            Marwan
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;event-info&quot;&gt;
+
+        &lt;div class=&quot;event-item&quot;&gt;
+          &lt;div class=&quot;event-label&quot;&gt;
+            Venue
+          &lt;/div&gt;
+
+          &lt;div class=&quot;event-value&quot;&gt;
+            Garde De La Vie Hall
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;event-item&quot;&gt;
+          &lt;div class=&quot;event-label&quot;&gt;
+            Time
+          &lt;/div&gt;
+
+          &lt;div class=&quot;event-value&quot;&gt;
+            7:00 PM
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;event-item&quot;&gt;
+          &lt;div class=&quot;event-label&quot;&gt;
+            Friday
+          &lt;/div&gt;
+
+          &lt;div class=&quot;event-value&quot;&gt;
+            16 October 2026
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         OUR STORY
+    ========================= --&gt;
+
+    &lt;section class=&quot;story&quot;&gt;
+
+      &lt;div class=&quot;center&quot;&gt;
+
+        &lt;div class=&quot;eyebrow&quot;&gt;
+          A few of the moments
+        &lt;/div&gt;
+
+        &lt;h2 class=&quot;story-title&quot;&gt;
+          Our Story
+        &lt;/h2&gt;
+
+        &lt;div class=&quot;story-description&quot;&gt;
+          A few of the moments that brought us here.
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;div class=&quot;story-slider&quot; id=&quot;storySlider&quot;&gt;
+
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;img
+            src=&quot;story-1.jpeg&quot;
+            alt=&quot;Our Story 1&quot;
+          &gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;img
+            src=&quot;story-2.jpeg&quot;
+            alt=&quot;Our Story 2&quot;
+          &gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;img
+            src=&quot;story-3.jpeg&quot;
+            alt=&quot;Our Story 3&quot;
+          &gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;img
+            src=&quot;story-4.jpeg&quot;
+            alt=&quot;Our Story 4&quot;
+          &gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;div class=&quot;slider-controls&quot;&gt;
+
+        &lt;button
+          class=&quot;slider-btn&quot;
+          onclick=&quot;slideStory(-1)&quot;
+        &gt;
+          ‹
+        &lt;/button&gt;
+
+        &lt;button
+          class=&quot;slider-btn&quot;
+          onclick=&quot;slideStory(1)&quot;
+        &gt;
+          ›
+        &lt;/button&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;slider-hint&quot;&gt;
+        Swipe to browse, tap a photo to open it
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         COUNTDOWN
+    ========================= --&gt;
+
+    &lt;section class=&quot;countdown&quot;&gt;
+
+      &lt;div class=&quot;eyebrow&quot;&gt;
+        Until our day
+      &lt;/div&gt;
+
+      &lt;h2 class=&quot;count-title&quot;&gt;
+        Counting down
+      &lt;/h2&gt;
+
+
+      &lt;div class=&quot;timer&quot;&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;time-number&quot; id=&quot;days&quot;&gt;
+            00
+          &lt;/div&gt;
+
+          &lt;div class=&quot;time-label&quot;&gt;
+            Days
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;time-number&quot; id=&quot;hours&quot;&gt;
+            00
+          &lt;/div&gt;
+
+          &lt;div class=&quot;time-label&quot;&gt;
+            Hours
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;time-number&quot; id=&quot;minutes&quot;&gt;
+            00
+          &lt;/div&gt;
+
+          &lt;div class=&quot;time-label&quot;&gt;
+            Minutes
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;div class=&quot;time-number&quot; id=&quot;seconds&quot;&gt;
+            00
+          &lt;/div&gt;
+
+          &lt;div class=&quot;time-label&quot;&gt;
+            Seconds
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;a
+        class=&quot;calendar-btn&quot;
+        target=&quot;_blank&quot;
+        href=&quot;https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ali%20Mohamed%20%26%20Mai%20Marwan%20Wedding&amp;dates=20261016T190000/20261016T230000&amp;details=Wedding%20of%20Ali%20Mohamed%20%26%20Mai%20Marwan&amp;location=Garde%20De%20La%20Vie%20Hall&quot;
+      &gt;
+        Add to calendar
+      &lt;/a&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         VENUE
+    ========================= --&gt;
+
+    &lt;section class=&quot;venue&quot;&gt;
+
+      &lt;div class=&quot;eyebrow&quot;&gt;
+        M &amp; M
+      &lt;/div&gt;
+
+      &lt;h2 class=&quot;venue-name&quot;&gt;
+        The Venue
+      &lt;/h2&gt;
+
+
+      &lt;!--
+<span lang="hi-IN">        يمكنك وضع صورة القاعة باسم</span>:
+        venue.jpeg
+      --&gt;
+
+      &lt;img
+        src=&quot;venue.jpeg&quot;
+        class=&quot;venue-image&quot;
+        alt=&quot;Garde De La Vie Hall&quot;
+      &gt;
+
+
+      &lt;div class=&quot;venue-name&quot;&gt;
+        Garde De La Vie Hall
+      &lt;/div&gt;
+
+      &lt;div class=&quot;venue-address&quot;&gt;
+        Directly in front of Burj El Arab Stadium
+        on the main road
+      &lt;/div&gt;
+
+
+      &lt;a
+        class=&quot;direction-btn&quot;
+        href=&quot;https://share.google/bGGYfDo2xD9Ozh5to&quot;
+        target=&quot;_blank&quot;
+      &gt;
+        Get directions
+      &lt;/a&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         GUEST WISHES
+    ========================= --&gt;
+
+    &lt;section class=&quot;wishes&quot;&gt;
+
+      &lt;div class=&quot;center&quot;&gt;
+
+        &lt;div class=&quot;eyebrow&quot;&gt;
+          Leave us a message
+        &lt;/div&gt;
+
+        &lt;h2 class=&quot;wishes-title&quot;&gt;
+          Guest Wishes
+        &lt;/h2&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;form
+        class=&quot;wish-form&quot;
+        id=&quot;wishForm&quot;
+      &gt;
+
+        &lt;input
+          class=&quot;field&quot;
+          id=&quot;guestName&quot;
+          type=&quot;text&quot;
+          placeholder=&quot;Your name&quot;
+          required
+        &gt;
+
+        &lt;textarea
+          class=&quot;field&quot;
+          id=&quot;guestWish&quot;
+          placeholder=&quot;Your wish for us&quot;
+          required
+        &gt;&lt;/textarea&gt;
+
+        &lt;div class=&quot;center&quot;&gt;
+
+          &lt;button
+            class=&quot;send-btn&quot;
+            type=&quot;submit&quot;
+          &gt;
+            Send wish
+          &lt;/button&gt;
+
+        &lt;/div&gt;
+
+      &lt;/form&gt;
+
+
+      &lt;div
+        class=&quot;wish-list&quot;
+        id=&quot;wishList&quot;
+      &gt;
+
+        &lt;div class=&quot;no-wishes&quot;&gt;
+          No wishes yet. Be the first to leave one.
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+
+
+    &lt;!-- =========================
+         FOOTER
+    ========================= --&gt;
+
+    &lt;footer&gt;
+
+      &lt;div class=&quot;footer-message&quot;&gt;
+        Your presence is the most beautiful gift
+      &lt;/div&gt;
+
+      &lt;div class=&quot;footer-date&quot;&gt;
+        16 . 10 . 2026
+      &lt;/div&gt;
+
+    &lt;/footer&gt;
+
+  &lt;/main&gt;
+
+
+  &lt;!-- =========================
+       JAVASCRIPT
+  ========================= --&gt;
+
+  &lt;script&gt;
+
+    /* =========================
+       OPEN INVITATION
+    ========================= */
+
+    function openInvitation() {
+
+      const opening = document.getElementById(&quot;opening&quot;);
+
+      opening.classList.add(&quot;hide&quot;);
+
+      document.body.style.overflow = &quot;auto&quot;;
+
+    }
+
+
+    document
+      .getElementById(&quot;opening&quot;)
+      .addEventListener(&quot;click&quot;, function(e) {
+
+        if (
+          e.target.id === &quot;opening&quot; ||
+          e.target.classList.contains(&quot;opening-inner&quot;)
+        ) {
+          openInvitation();
+        }
+
+      });
+
+
+    /* =========================
+       GUEST NAME
+    ========================= */
+
+    const params =
+      new URLSearchParams(window.location.search);
+
+    const guest =
+      params.get(&quot;guest&quot;);
+
+
+    if (guest) {
+
+      document.getElementById(&quot;guestMessage&quot;).innerHTML =
+        `Dear &lt;strong&gt;${escapeHTML(guest)}&lt;/strong&gt;, we're happy to celebrate with you.`;
+
+    }
+
+
+    function escapeHTML(text) {
+
+      const div = document.createElement(&quot;div&quot;);
+
+      div.textContent = text;
+
+      return div.innerHTML;
+
+    }
+
+
+    /* =========================
+       COUNTDOWN
+    ========================= */
+
+    const weddingDate =
+      new Date(&quot;October 16, 2026 19:00:00&quot;).getTime();
+
+
+    function updateCountdown() {
+
+      const now =
+        new Date().getTime();
+
+      const difference =
+        weddingDate - now;
+
+
+      if (difference &lt;= 0) {
+
+        document.getElementById(&quot;days&quot;).innerText = &quot;00&quot;;
+        document.getElementById(&quot;hours&quot;).innerText = &quot;00&quot;;
+        document.getElementById(&quot;minutes&quot;).innerText = &quot;00&quot;;
+        document.getElementById(&quot;seconds&quot;).innerText = &quot;00&quot;;
+
+        return;
+
+      }
+
+
+      const days =
+        Math.floor(
+          difference /
+          (1000 * 60 * 60 * 24)
+        );
+
+
+      const hours =
+        Math.floor(
+          (difference /
+            (1000 * 60 * 60)) % 24
+        );
+
+
+      const minutes =
+        Math.floor(
+          (difference /
+            (1000 * 60)) % 60
+        );
+
+
+      const seconds =
+        Math.floor(
+          (difference / 1000) % 60
+        );
+
+
+      document.getElementById(&quot;days&quot;).innerText =
+        String(days).padStart(2, &quot;0&quot;);
+
+      document.getElementById(&quot;hours&quot;).innerText =
+        String(hours).padStart(2, &quot;0&quot;);
+
+      document.getElementById(&quot;minutes&quot;).innerText =
+        String(minutes).padStart(2, &quot;0&quot;);
+
+      document.getElementById(&quot;seconds&quot;).innerText =
+        String(seconds).padStart(2, &quot;0&quot;);
+
+    }
+
+
+    updateCountdown();
+
+    setInterval(updateCountdown, 1000);
+
+
+    /* =========================
+       STORY SLIDER
+    ========================= */
+
+    function slideStory(direction) {
+
+      const slider =
+        document.getElementById(&quot;storySlider&quot;);
+
+      const card =
+        slider.querySelector(&quot;.story-card&quot;);
+
+      if (!card) return;
+
+      const amount =
+        card.offsetWidth + 15;
+
+      slider.scrollBy({
+
+        left:
+          direction * amount,
+
+        behavior:
+          &quot;smooth&quot;
+
+      });
+
+    }
+
+
+    /* =========================
+       IMAGE CLICK
+    ========================= */
+
+    document
+      .querySelectorAll(&quot;.story-card img&quot;)
+      .forEach(img =&gt; {
+
+        img.addEventListener(&quot;click&quot;, () =&gt; {
+
+          const overlay =
+            document.createElement(&quot;div&quot;);
+
+          overlay.style.position = &quot;fixed&quot;;
+          overlay.style.inset = &quot;0&quot;;
+          overlay.style.background = &quot;rgba(0,0,0,.92)&quot;;
+          overlay.style.zIndex = &quot;1000&quot;;
+          overlay.style.display = &quot;flex&quot;;
+          overlay.style.alignItems = &quot;center&quot;;
+          overlay.style.justifyContent = &quot;center&quot;;
+          overlay.style.padding = &quot;20px&quot;;
+
+          const image =
+            document.createElement(&quot;img&quot;);
+
+          image.src = img.src;
+
+          image.style.maxWidth = &quot;95%&quot;;
+          image.style.maxHeight = &quot;90vh&quot;;
+          image.style.objectFit = &quot;contain&quot;;
+
+          overlay.appendChild(image);
+
+          overlay.addEventListener(
+            &quot;click&quot;,
+            () =&gt; overlay.remove()
+          );
+
+          document.body.appendChild(overlay);
+
+        });
+
+      });
+
+
+    /* =========================
+       WISHES
+    ========================= */
+
+    const wishForm =
+      document.getElementById(&quot;wishForm&quot;);
+
+    const wishList =
+      document.getElementById(&quot;wishList&quot;);
+
+
+    let wishes =
+      JSON.parse(
+        localStorage.getItem(&quot;aliMaiWishes&quot;) || &quot;[]&quot;
+      );
+
+
+    function renderWishes() {
+
+      if (!wishes.length) {
+
+        wishList.innerHTML = `
+          &lt;div class=&quot;no-wishes&quot;&gt;
+            No wishes yet. Be the first to leave one.
+          &lt;/div&gt;
+        `;
+
+        return;
+
+      }
+
+
+      wishList.innerHTML =
+        wishes.map(wish =&gt; `
+
+          &lt;div class=&quot;wish&quot;&gt;
+
+            &lt;div class=&quot;wish-name&quot;&gt;
+              ${escapeHTML(wish.name)}
+            &lt;/div&gt;
+
+            &lt;div class=&quot;wish-text&quot;&gt;
+              ${escapeHTML(wish.message)}
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+        `).join(&quot;&quot;);
+
+    }
+
+
+    wishForm.addEventListener(
+      &quot;submit&quot;,
+      function(e) {
+
+        e.preventDefault();
+
+
+        const name =
+          document.getElementById(&quot;guestName&quot;)
+            .value
+            .trim();
+
+
+        const message =
+          document.getElementById(&quot;guestWish&quot;)
+            .value
+            .trim();
+
+
+        if (!name || !message) return;
+
+
+        wishes.unshift({
+
+          name,
+          message
+
+        });
+
+
+        localStorage.setItem(
+          &quot;aliMaiWishes&quot;,
+          JSON.stringify(wishes)
+        );
+
+
+        wishForm.reset();
+
+        renderWishes();
+
+      }
+    );
+
+
+    renderWishes();
+
+
+    /* =========================
+       LANGUAGE
+    ========================= */
+
+    function toggleLanguage() {
+
+      alert(
+        &quot;Arabic version can be added with the same design.&quot;
+      );
+
+    }
+
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
